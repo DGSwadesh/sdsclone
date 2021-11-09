@@ -174,9 +174,9 @@ Route::get('seed', function (){
 
 Route::get("search",[ProductsController::class,"SearchProduct"])->name("product.search");
 
-Route::get("/shape/add",[ShapeController::class,"ShapeAdd"])->name("shape.add");
-
 Route::get("/shape/view",[ShapeController::class,"ShapeView"])->name("shape.view");
+
+Route::get("/shape/add",[ShapeController::class,"ShapeAdd"])->name("shape.add");
 
 Route::post("/shape/store",[ShapeController::class,"ShapeStore"])->name("shape.store");
 

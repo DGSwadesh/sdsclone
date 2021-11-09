@@ -69,8 +69,8 @@ class GalleryController extends Controller
                 return $edit;
             })
             ->addColumn('action', function ($data) {
-                $url_update = route('editProducts', ['id' => $data->id]);
-                $url_delete = route('deleteProducts', ['id' => $data->id]);
+                $url_update = route('editGallery', ['id' => $data->id]);
+                $url_delete = route('deleteGallery', ['id' => $data->id]);
                 $edit = '<a class="label label-primary" data-title="Edit Products" data-act="ajax-modal" data-append-id="AjaxModelContent" data-action-url="' . $url_update . '" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>';
 
                 $edit .= '&nbsp<a href="' . $url_delete . '" class="label label-danger" data-confirm="Are you sure to delete Products: <span class=&#034;label label-primary&#034;>' . $data->name . '</span>"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete </a>';

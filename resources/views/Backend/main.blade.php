@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="{{ url('assets/backend/plugin/Ionicons/css/ionicons.min.css') }}">
     <!-- Select2 -->
     <link rel="stylesheet" href="{{ url('assets/backend/plugin/select2/dist/css/select2.css') }}">
-    
+
     <!-- AdminLTE -->
     <link rel="stylesheet" href="{{ url('assets/backend/css/AdminLTE.min.css') }}">
     <!-- iCheck -->
@@ -166,11 +166,6 @@
                 <!-- sidebar menu: : style can be found in sidebar.less -->
                 <ul class="sidebar-menu" data-widget="tree">
 
-                    <li>
-                        <a href="{{ route('dashboard') }}">
-                            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
-                        </a>
-                    </li>
 
                     <li>
                         <a href="{{ route('products') }}">
@@ -181,6 +176,12 @@
                     <li>
                         <a href="{{ route('allCategory') }}">
                             <i class="fa fa-list-alt"></i> <span>Categories</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="{{ route('shape.view') }}">
+                            <i class="fa fa-dashboard"></i> <span>Shap</span>
                         </a>
                     </li>
 
